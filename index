@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>多拉旺仔——微商已死</title>
+	<link rel="stylesheet" type="text/css" href="framework/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="framework/blog.css">
+	<script src="framework/angular.min.js"></script>
+	<script src="framework/angular-ui-router.js"></script>
+	<script src="js/appRouter.js"></script>
+</head>
+<body  ng-app="blogRouter">
+<div class="blog-masthead">
+	<div class="container">
+		<nav class="blog-nav">
+  			<a class="blog-nav-item active" href="index.html">主页</a>
+  			<a class="blog-nav-item" href="#">联系我</a>
+		</nav>
+	</div>
+</div>
+<div class="container">
+	<div class="blog-header">
+    	<h1 class="blog-title"></h1>
+    	<p class="lead blog-description">当你能力还不能够撑起你的野心的时候，你要做的就是沉下心来学习。</p>
+    </div>
+    <div class="row">
+		<div class="col-sm-8 blog-main">
+			<div ui-view></div>
+		</div>
+	    <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+	        <div class="sidebar-module sidebar-module-inset">
+	            <h4>About</h4>
+	            <p>请用IE9以上浏览器观看。</p>
+	        </div>
+	        <div class="sidebar-module">
+            	<h4>随笔</h4>
+           		<ol class="list-unstyled">
+              		<li><a href="#/content/3">2015	3月	『我的大学』</a></li>
+              		<li><a href="#/content/2">2015	2月	『微商已死』</a></li>
+            	</ol>
+            </div>
+	    </div>
+	</div>
+</div>
+<footer class="blog-footer">
+    <p>版权所有<a href="https://twitter.com/mdo">@王书朋</a>.</p>
+	<p><a href="#">top</a></p>
+</footer>	
+</body>
+</html>
